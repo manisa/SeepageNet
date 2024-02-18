@@ -7,8 +7,8 @@ os.environ["CUDA_VISIBLE_DEVICES"]="3"
 
 import tensorflow_addons as tfa
 import sys; sys.path.insert(0, '..')
-from lib.metrics import jaccard, dice_coef, bce_dice_loss
-from lib.dataloader import DataGen
+from utils.metrics import jaccard, dice_coef, bce_dice_loss
+from utils.dataloader import DataGen
 
 
 from archs.seepage_nopca_arch import Depthwise_Seepage_Inception
